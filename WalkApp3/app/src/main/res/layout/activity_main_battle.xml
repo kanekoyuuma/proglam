@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.tenma.walkapp3.AppMain_battle">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/haikei" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="-5dp"
+                android:onClick="StatusStart"
+                app:srcCompat="@drawable/sesese" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="220dp"
+                android:onClick="LogStart"
+                app:srcCompat="@drawable/karennda" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="460dp">
+
+            <ImageView
+                android:id="@+id/main_hukidashi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/main_hukidasi" />
+
+            <ImageView
+                android:id="@+id/main_hukidashi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/main_hukidasi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/main_battle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:onClick="change"
+                        app:srcCompat="@drawable/main_battle1" />
+
+                    <ImageButton
+                        android:id="@+id/main_magic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:onClick="change"
+                        app:srcCompat="@drawable/main_magic1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/main_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:onClick="change"
+                        app:srcCompat="@drawable/main_check1" />
+
+                    <ImageButton
+                        android:id="@+id/main_escape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:onClick="change"
+                        app:srcCompat="@drawable/main_escape1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp">
+
+                <ImageButton
+                    android:id="@+id/main_hukidashi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:onClick="change"
+                    android:scaleType="fitXY"
+                    />
+                <ImageButton
+                    android:id="@+id/main_hukidashi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:onClick="change"
+                    android:scaleType="fitXY" />
+                <ImageButton
+                    android:id="@+id/main_hukidashi4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:onClick="change"
+                    android:scaleType="fitXY" />
+                <ImageButton
+                    android:id="@+id/main_hukidashi5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:onClick="change"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/main_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:id="@+id/main_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/npc1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/tyouasu"
+
+            />
+        <ImageView
+            android:id="@+id/gazou3"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            />
+        <!--今回は使用しない-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/my_hpbar"
+            android:layout_width="231dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            />
+
+        <TextView
+            android:id="@+id/my__hp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="80dp"
+            android:text=""
+            android:textSize="20dp" />
+
+    </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_marginTop="423dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:text="" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/hpbar"
+            android:layout_width="230dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-210dp"
+            app:srcCompat="@drawable/hp100" />
+
+        <TextView
+            android:id="@+id/hp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="-210dp"
+            android:text="cpuhp"
+            android:textSize="20dp" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

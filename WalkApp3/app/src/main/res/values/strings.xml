@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">WalkApp3</string>
+    <string-array name="list">
+        <item>0</item>
+        <item>120</item>
+        <item>125</item>
+        <item>130</item>
+        <item>135</item>
+        <item>140</item>
+        <item>145</item>
+        <item>150</item>
+        <item>160</item>
+        <item>165</item>
+        <item>170</item>
+        <item>175</item>
+        <item>180</item>
+        <item>185</item>
+        <item>190</item>
+        <item>195</item>
+        <item>200</item>
+
+    </string-array>
+    <string-array name="list2">
+        <item>0</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>110</item>
+        <item>120</item>
+        <item>130</item>
+        <item>140</item>
+        <item>150</item>
+    </string-array>
+
+    <string-array name="list3">
+        <item>-</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <array name = "tekicpu">
+        <item>@drawable/npc1</item>
+        <item>@drawable/npc3</item>
+        <item>@drawable/npc2</item>
+    </array>
+    <array name = "teki_scenario_array">
+        <item>@drawable/ss</item>
+        <item>@drawable/kennosuke</item>
+        <item>@drawable/mohikan</item>
+        <item>@drawable/ou</item>
+        <item>@drawable/sikabane</item>
+        <item>@drawable/zyuusya</item>
+        <item>@drawable/syounen</item>
+        <item>@drawable/seinen</item>
+        <item>@drawable/ma</item>
+        <item>@drawable/mb</item>
+        <item>@drawable/mc</item>
+        <item>@drawable/o1</item>
+        <item>@drawable/o2</item>
+        <item>@drawable/maa</item>
+        <item>@drawable/maab</item>
+        <item>@drawable/maac</item>
+        <item>@drawable/tyouasu</item>
+        <item>@drawable/on</item>
+        <item>@drawable/monnbann</item>
+
+    </array>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tenma.walkapp3">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:launchMode="singleTask"
+        android:largeHeap="true"
+        android:screenOrientation="portrait">
+
+        <activity android:name=".AppTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AppMain_battle"></activity>
+        <activity android:name=".AppMain_scenario"></activity>
+        <activity android:name=".AppStatus"></activity>
+        <activity android:name=".AppLog"></activity>
+        <activity android:name=".SccrenTitle"></activity>
+        <activity android:name=".Epilogue"></activity>
+        <activity android:name=".die"></activity>
+        <activity android:name=".Batle_Start"></activity>
+
+
+
+        <receiver android:name="AppTitle$mReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".NotificationService" />
+
+    </application>
+
+</manifest>
